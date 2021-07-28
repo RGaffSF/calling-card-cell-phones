@@ -33,9 +33,8 @@ if (this.activeCall === true) {
 
 // Let the minutes tick by.
  tick() {
-     //this.callingCard.minutes -= 1;
+     this.callingCard.minutes -= 1;
      this.totalticks += 1;
-     this.callingCard.useMinutes(1)
 
      if (this.callingCard.minutes === 0 ) {
         this.endCall()

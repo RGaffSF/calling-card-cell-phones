@@ -30,17 +30,17 @@ console.log("minutes: " + card.minutes);
 phone.call("555-4444");
 phone.tick();       // 1 minute elapsed
 phone.tick();       // 2 minutes elapsed
-//phone.tick();       // 2 minutes elapsed
+phone.tick();       // 2 minutes elapsed
 phone.tick();       // 2 minutes elapsed
 console.log("ticks: " + phone.totalticks);
 phone.endCall();
 
 phone.call("555-5555");
-console.log("ticks: " + phone.totalticks);
 phone.tick();       // 3 minutes elapsed
-//phone.endCall();
 console.log("ticks: " + phone.totalticks);
+//phone.endCall();
 console.log("minutes: " + card.minutes);
+console.log("total used minutes: " + card.useMinutes.totalusedminutes);
 
 phone.getHistory(); // => returns "555-1111 (2 minutes), 555-3333 (cut of at 3 minutes)"
 
