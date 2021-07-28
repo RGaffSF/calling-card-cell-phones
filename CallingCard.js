@@ -7,7 +7,7 @@ class CallingCard {
     }
 
 addDollars(amount) {
-    this.money = amount;
+    this.money += amount;
     this.totalMoney += amount;
        //convert addDollars to added minutes
     this.minutes = Math.floor(this.money * 100 / this.centsPerMin)
